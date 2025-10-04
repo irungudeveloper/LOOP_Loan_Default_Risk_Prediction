@@ -415,3 +415,7 @@ async def health():
         "model_path": MODEL_PATH,
         "load_error": MODEL_LOAD_ERROR,
     }
+    
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
